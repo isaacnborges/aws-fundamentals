@@ -4,7 +4,7 @@ Cloud Fundamentals: AWS Services for C# Developers
 ### Customers Api - message request example
 ``` json
 {
-	"id": "67c338ae-9556-4aea-b800-02b69f8a7592",
+    "id": "67c338ae-9556-4aea-b800-02b69f8a7592",
     "fullName": "Isaac Borges",
     "email": "email@email.com",
     "gitHubUsername": "isaacnborges",
