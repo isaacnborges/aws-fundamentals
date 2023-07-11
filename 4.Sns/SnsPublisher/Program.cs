@@ -1,9 +1,7 @@
-﻿using Amazon.SQS;
-using Amazon.SQS.Model;
-using SqsPublisher;
+﻿using Amazon.SimpleNotificationService;
+using Amazon.SimpleNotificationService.Model;
+using SnsPublisher;
 using System.Text.Json;
-
-var sqsClient = new AmazonSQSClient();
 
 var customer = new CustomerCreated
 {
@@ -14,12 +12,14 @@ var customer = new CustomerCreated
     GitHubUsername = "isaacnborges"
 };
 
-var queueUrlResponse = await sqsClient.GetQueueUrlAsync("customers");
+var snsClient = new AmazonSimpleNotificationServiceClient();
 
-var sendMessageRequest = new SendMessageRequest
+var topicArnResponse = await snsClient.FindTopicAsync("customers");
+
+var publishRequest = new PublishRequest
 {
-    QueueUrl = queueUrlResponse.QueueUrl,
-    MessageBody = JsonSerializer.Serialize(customer),
+    TopicArn = topicArnResponse.TopicArn,
+    Message = JsonSerializer.Serialize(customer),
     MessageAttributes = new Dictionary<string, MessageAttributeValue>
     {
         {
@@ -32,6 +32,4 @@ var sendMessageRequest = new SendMessageRequest
     }
 };
 
-var response = sqsClient.SendMessageAsync(sendMessageRequest);
-
-Console.WriteLine(response);
+var response = await snsClient.PublishAsync(publishRequest);
