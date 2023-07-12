@@ -1,7 +1,16 @@
 # aws-fundamentals
-Cloud Fundamentals: AWS Services for C# Developers
+Cloud Fundamentals: AWS Services for C# Developers - Made by [Nick Chapsas](https://www.youtube.com/@nickchapsas)
 
-### Customers Api - message request example
+### Summary
+
+- [AWS SQS](https://aws.amazon.com/sqs/) -> Simple Queue Service
+- [AWS SNS](https://aws.amazon.com/sns/) -> Simple Notification Service
+- [AWS DynamoDB](https://aws.amazon.com/dynamodb/)
+- [AWS S3](https://aws.amazon.com/s3/) -> Simple Storage Service
+- [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/)
+- [AWS Lambda](https://aws.amazon.com/lambda/)
+
+#### Customers Api - message request example
 ``` json
 {
     "id": "67c338ae-9556-4aea-b800-02b69f8a7592",
@@ -11,7 +20,7 @@ Cloud Fundamentals: AWS Services for C# Developers
     "dateOfBirth": "1993-01-01"
 }
 ```
-### SQS Access Policy permissions
+#### SQS Access Policy permissions
 ``` json
     {
       "Effect": "Allow",
@@ -28,7 +37,7 @@ Cloud Fundamentals: AWS Services for C# Developers
     }
 ```    
 
-### SNS Subcription Filter
+#### SNS Subcription Filter
 
 message attributes
 ``` json

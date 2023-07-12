@@ -3,7 +3,7 @@ using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DocumentModel;
 using Amazon.DynamoDBv2.Model;
 
-namespace Movies.Api;
+namespace Movies.App;
 
 public class DataSeeder
 {
