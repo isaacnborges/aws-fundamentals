@@ -39,6 +39,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customers.Api", "6.Aws S3\C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S3Playground", "6.Aws S3\S3Playground\S3Playground.csproj", "{0C2BCE2A-6CAC-4F78-B85E-B6A40CCC514C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather.Api", "7.Aws SecretsManager\Weather.Api\Weather.Api.csproj", "{0D962D17-CC07-49DC-9EDC-23992BBD339F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecretsManager.App", "7.Aws SecretsManager\SecretsManager.app\SecretsManager.App.csproj", "{7A4EFB4A-6017-4D3E-A9DF-E6748D3AEFFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{0C2BCE2A-6CAC-4F78-B85E-B6A40CCC514C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C2BCE2A-6CAC-4F78-B85E-B6A40CCC514C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C2BCE2A-6CAC-4F78-B85E-B6A40CCC514C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D962D17-CC07-49DC-9EDC-23992BBD339F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D962D17-CC07-49DC-9EDC-23992BBD339F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D962D17-CC07-49DC-9EDC-23992BBD339F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D962D17-CC07-49DC-9EDC-23992BBD339F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A4EFB4A-6017-4D3E-A9DF-E6748D3AEFFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A4EFB4A-6017-4D3E-A9DF-E6748D3AEFFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A4EFB4A-6017-4D3E-A9DF-E6748D3AEFFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A4EFB4A-6017-4D3E-A9DF-E6748D3AEFFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -110,6 +122,8 @@ Global
 		{5F8F6FB8-6C84-483B-A053-D5B6DA24E561} = {2C17779A-FD5B-4980-BEB0-4A19912178B7}
 		{FEA342EF-05B2-40AF-9492-1F117FA63C20} = {6CC73189-9356-4EE7-B061-73D9395C30AC}
 		{0C2BCE2A-6CAC-4F78-B85E-B6A40CCC514C} = {6CC73189-9356-4EE7-B061-73D9395C30AC}
+		{0D962D17-CC07-49DC-9EDC-23992BBD339F} = {8D27D9CA-8D14-4CD6-9827-A0837CFB03C3}
+		{7A4EFB4A-6017-4D3E-A9DF-E6748D3AEFFE} = {8D27D9CA-8D14-4CD6-9827-A0837CFB03C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA943F2F-5AC0-4A2D-98A4-EFAB71830D31}
