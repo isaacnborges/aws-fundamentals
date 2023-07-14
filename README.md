@@ -74,7 +74,7 @@ aws lambda invoke --function-name SimpleLambda --cli-binary-format raw-in-base64
 Get-Content \.response.json
 ```
 
-#### [.NET Core CLI]((https://docs.aws.amazon.com/lambda/latest/dg/csharp-package-cli.html))
+#### [.NET Core CLI](https://docs.aws.amazon.com/lambda/latest/dg/csharp-package-cli.html)
 ```
 dotnet tool install -g Amazon.Lambda.Tools
 ```
